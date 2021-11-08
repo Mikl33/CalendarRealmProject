@@ -7,58 +7,82 @@
     android:background="#E1FFFC">
 
     <TextView
-        android:id="@+id/tasks0"
-        android:layout_width="0dp"
+        android:id="@+id/tvId"
+        android:layout_width="50dp"
         android:layout_height="18dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="#E53935"
-        android:tag="tasks0"
-        android:text="Задачи"
-        android:textColor="#3949AB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/interval0"
+        android:layout_marginTop="4dp"
+        android:background="#A8C1A9"
+        android:text="selD"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006" />
+        tools:layout_editor_absoluteX="3dp" />
 
     <TextView
-        android:id="@+id/interval0"
-        android:layout_width="100dp"
+        android:id="@+id/dataStart"
+        android:layout_width="85dp"
         android:layout_height="18dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="2dp"
-        android:background="#A8C1A9"
-        android:tag="interval0"
-        android:text="0:00-1:00"
-        app:layout_constraintBottom_toBottomOf="@+id/tasks0"
-        app:layout_constraintEnd_toStartOf="@+id/tasks0"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tasks0"
+        android:layout_marginStart="4dp"
+        android:background="#E53935"
+        android:text="TextView"
+        android:textColor="#3949AB"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/interval1"
-        android:layout_width="102dp"
+        android:id="@+id/dataFinish"
+        android:layout_width="85dp"
         android:layout_height="18dp"
-        android:layout_marginTop="8dp"
-        android:background="#C53333"
-        android:tag="interval1"
-        android:text="1:00-2:00"
-        app:layout_constraintStart_toStartOf="@+id/interval0"
-        app:layout_constraintTop_toBottomOf="@+id/interval0" />
+        android:layout_marginStart="4dp"
+        android:background="#9CC19D"
+        android:inputType="text"
+        android:text="TextView"
+        android:textColor="#062201"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dataStart"
+        app:layout_constraintStart_toEndOf="@+id/dataStart"
+        app:layout_constraintTop_toTopOf="@+id/dataStart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="-20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="26dp" />
 
     <TextView
-        android:id="@+id/tasks1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:tag="tasks1"
+        android:id="@+id/noteDescription"
+        android:layout_width="115dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#9CC19D"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/interval1"
+        app:layout_constraintBottom_toBottomOf="@+id/dataFinish"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/interval1"
-        app:layout_constraintTop_toTopOf="@+id/interval1" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dataFinish"
+        app:layout_constraintTop_toTopOf="@+id/dataFinish"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="#A8C1A9"
+        android:text="title"
+        app:layout_constraintEnd_toStartOf="@+id/dataStart"
+        app:layout_constraintStart_toEndOf="@+id/tvId"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
